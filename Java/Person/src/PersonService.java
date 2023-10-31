@@ -7,8 +7,11 @@ public class PersonService {
     static{
         parr = new Person[100];
         parr[0] = new Person(0, "N/A", "N/A");
+        parr[1] = new Person(0, "Nikhil", "8164655165");
+        parr[2] = new Person(0, "Nishant", "98716466615");
+        parr[3] = new Person(0, "Ankush", "9198711546");
         // we need to define dummy object otherwise it will show null when we display 
-        cnt = 1;
+        cnt = 4;
     } 
     public static void addPerson(){
         Scanner sc = new Scanner(System.in); 
@@ -36,6 +39,37 @@ public class PersonService {
             System.out.println(parr[i]);
         }
         System.out.println();
+    }
+    
+// 3. Display by id
+    public static void displayByID(int id) {
+    	for(int i = 1; i < cnt; i++) {
+    		if (parr[i].getID() == id) {
+    			System.out.println(parr[i]);
+    		}
+    	}
+    	System.out.println("ID not found");
+    }
+    
+// 4. Display by name
+    public static void displayByName(String name) {
+    	for(int i = 1; i < cnt; i++) {
+    		if (parr[i].getName().equals(name)){
+    			System.out.println(parr[i]);
+    		}
+    	}
+    	System.out.println("Name not found");
+    }
+    
+// 5. Update by number
+    public static void updateNumber(int id, String number) {
+    	for(int i = 1; i < cnt; i++) {
+    		if(parr[i].getID() == id) {
+    			parr[i].setNumber(number);
+    			System.out.println(parr[i]);
+    		}
+    	}
+    	System.out.println("ID not found");
     }
     
 }

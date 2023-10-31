@@ -23,12 +23,15 @@ public class Test {
                     break;
 
                 case 3:
+                	PersonService.displayByID(1);
                     break;
 
                 case 4:
+                	PersonService.displayByName("Nishant");
                     break;
                     
                 case 5:
+                	PersonService.updateNumber(2, "354143333431");
                     break;
                 case 6:
                     break;
