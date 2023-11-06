@@ -22,7 +22,7 @@ public class Test {
                     PersonService.displayAll();
                     break;
 
-                case 3:
+                case 3:	
                 	PersonService.displayByID(1);
                     break;
 

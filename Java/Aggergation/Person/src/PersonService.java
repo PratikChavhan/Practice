@@ -7,9 +7,9 @@ public class PersonService {
     static{
         parr = new Person[100];
         parr[0] = new Person(0, "N/A", "N/A");
-        parr[1] = new Person(0, "Nikhil", "8164655165");
-        parr[2] = new Person(0, "Nishant", "98716466615");
-        parr[3] = new Person(0, "Ankush", "9198711546");
+        parr[1] = new Person(1, "Nikhil", "8164655165");
+        parr[2] = new Person(2, "Nishant", "98716466615");
+        parr[3] = new Person(3, "Ankush", "9198711546");
         // we need to define dummy object otherwise it will show null when we display 
         cnt = 4;
     } 
@@ -42,34 +42,39 @@ public class PersonService {
     }
     
 // 3. Display by id
-    public static void displayByID(int id) {
+    public static Person displayByID(int id) {
     	for(int i = 1; i < cnt; i++) {
     		if (parr[i].getID() == id) {
-    			System.out.println(parr[i]);
+    			return parr[i];
     		}
     	}
-    	System.out.println("ID not found");
+		return null;
     }
     
 // 4. Display by name
-    public static void displayByName(String name) {
+    public static Person displayByName(String name) {
     	for(int i = 1; i < cnt; i++) {
     		if (parr[i].getName().equals(name)){
-    			System.out.println(parr[i]);
+    			return parr[i];
     		}
     	}
-    	System.out.println("Name not found");
+		return null;
     }
     
-// 5. Update by number
-    public static void updateNumber(int id, String number) {
+// 5. Update by Number
+    public static Person updateNumber(int id, String number) {
     	for(int i = 1; i < cnt; i++) {
     		if(parr[i].getID() == id) {
     			parr[i].setNumber(number);
-    			System.out.println(parr[i]);
+    			return parr[i];
     		}
     	}
-    	System.out.println("ID not found");
+		return null;
     }
+
+// 6. Delete by ID
+	public static void deleteByID(int i) {
+		
+	}
     
 }
