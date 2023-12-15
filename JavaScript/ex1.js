@@ -1,4 +1,4 @@
-// primitive data types -> number, string, boolean
+// primitive data types -> number, string, boolean, null, undefined, function, bigint, symbol
 // string - primitive 
 // String - object
 // Js supports array of non homogenous elements as well
