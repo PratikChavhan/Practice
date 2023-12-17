@@ -1,6 +1,4 @@
-export default welcome;
-
-function welcome() 
+export default function welcome() 
 {
   return(
       <>
@@ -12,4 +10,4 @@ function welcome()
 
 export function Greeting() {
   return (<p><b>Good Morning</b></p>)
-}
+}    
