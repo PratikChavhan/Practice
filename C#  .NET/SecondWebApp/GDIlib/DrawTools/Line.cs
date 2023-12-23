@@ -1,4 +1,4 @@
-using Drawing;
+namespace Drawings;
 using Hardware;
 
 public class Line:Shape, Iprinter{
@@ -10,11 +10,15 @@ public class Line:Shape, Iprinter{
         this.endpoint= new Point(0,0);
     }
 
-    public Line(int x1, int y1, int x2, int y2, int w, String c):base(w,c){
-        this.startpoint = new Point(x1,y1);
-        this.endpoint = new Point(x2,y2);
-    }
+    // public Line(int x1, int y1, int x2, int y2, int w, String c):base(w,c){
+    //    this.startpoint = new Point(x1,y1);
+    //    this.endpoint = new Point(x2,y2);
+    // }
 
+    public Line(Point p1, Point p2, int w, String c):base(w,c){
+        this.startpoint = p1;
+        this.endpoint = p2;
+    }
     public override void Draw(){
         Console.WriteLine("Drawing Line");
         Console.WriteLine(this);

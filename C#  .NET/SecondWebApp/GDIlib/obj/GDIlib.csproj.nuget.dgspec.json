@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IET\\Desktop\\DeleteMe\\Dotnet\\GDIlib\\GDIlib.csproj": {}
+    "C:\\Users\\coder\\OneDrive\\Desktop\\Git\\Practice\\C#  .NET\\SecondWebApp\\GDIlib\\GDIlib.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IET\\Desktop\\DeleteMe\\Dotnet\\GDIlib\\GDIlib.csproj": {
+    "C:\\Users\\coder\\OneDrive\\Desktop\\Git\\Practice\\C#  .NET\\SecondWebApp\\GDIlib\\GDIlib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IET\\Desktop\\DeleteMe\\Dotnet\\GDIlib\\GDIlib.csproj",
+        "projectUniqueName": "C:\\Users\\coder\\OneDrive\\Desktop\\Git\\Practice\\C#  .NET\\SecondWebApp\\GDIlib\\GDIlib.csproj",
         "projectName": "GDIlib",
-        "projectPath": "C:\\Users\\IET\\Desktop\\DeleteMe\\Dotnet\\GDIlib\\GDIlib.csproj",
-        "packagesPath": "C:\\Users\\IET\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IET\\Desktop\\DeleteMe\\Dotnet\\GDIlib\\obj\\",
+        "projectPath": "C:\\Users\\coder\\OneDrive\\Desktop\\Git\\Practice\\C#  .NET\\SecondWebApp\\GDIlib\\GDIlib.csproj",
+        "packagesPath": "C:\\Users\\coder\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\coder\\OneDrive\\Desktop\\Git\\Practice\\C#  .NET\\SecondWebApp\\GDIlib\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\IET\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\coder\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
