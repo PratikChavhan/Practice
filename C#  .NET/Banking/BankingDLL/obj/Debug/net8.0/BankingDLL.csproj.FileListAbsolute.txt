@@ -1,0 +1,12 @@
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.AssemblyInfoInputs.cache
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.AssemblyInfo.cs
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.csproj.CoreCompileInputs.cache
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.sourcelink.json
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\bin\Debug\net8.0\BankingDLL.deps.json
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\bin\Debug\net8.0\BankingDLL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\bin\Debug\net8.0\BankingDLL.pdb
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\refint\BankingDLL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\BankingDLL.pdb
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\Banking\BankingDLL\obj\Debug\net8.0\ref\BankingDLL.dll
