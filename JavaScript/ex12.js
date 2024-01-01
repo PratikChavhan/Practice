@@ -14,3 +14,4 @@ const add7 =makeAdder(7);
 console.log(add2(5));
 console.log(add3(5));
 console.log(add7(5));
+  

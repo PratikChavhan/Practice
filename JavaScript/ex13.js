@@ -1,16 +1,17 @@
 // counter factory 
 
-function counterFactory(){
-    let count=0;
+function counterFactory(start){
+    let count=start;
     function incrementor(){
         return ++count;
     }
     return incrementor;
 }
 
-let incr = counterFactory();
+let incr = counterFactory(500);
 incr();
 incr();
 incr();
 incr();
 console.log(incr());
+  
