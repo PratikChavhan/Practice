@@ -1,0 +1,31 @@
+@using BOL;
+@{
+    ViewData["Title"] = "Display Employees By ID";
+}
+
+<div class="text-center">
+    @{
+        Employees emp = new Employees;
+        emplist = (Employees)this.ViewData["EmployeeByID"];
+        
+  
+            <table border=3px style="border-style: groove; ">
+
+                <thead>
+                    <tr>
+                        <td>EMPLOYEE NO.</td>
+                        <td>EMPLOYEE NAME</td>
+                        <td>JOB</td>
+                    </tr>
+                </thead>
+                <tbody>         
+                <tr>
+    
+                    <td><p>@emp.Empno</p></td>
+                    <td><p>@emp.Ename</p></td>
+                    <td><p>@emp.Job</p></td>
+                </tr>
+                </tbody>
+            </table>
+        }
+</div>
