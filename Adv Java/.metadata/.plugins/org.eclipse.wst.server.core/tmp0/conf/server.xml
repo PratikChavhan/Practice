@@ -160,7 +160,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\coder\OneDrive\Desktop\Git\Practice\Adv Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\coder\OneDrive\Desktop\Git\Practice\Adv Java\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyCalculations" path="/MyCalculations" reloadable="true" source="org.eclipse.jst.jee.server:MyCalculations"/></Host>
+      <Context docBase="MyCalculations" path="/MyCalculations" reloadable="true" source="org.eclipse.jst.jee.server:MyCalculations"/><Context docBase="MyHelloWebApp" path="/MyHelloWebApp" reloadable="true" source="org.eclipse.jst.jee.server:MyHelloWebApp"/><Context docBase="MyCalculations" path="/MyCalculations" reloadable="true" source="org.eclipse.jst.jee.server:MyCalculations"/><Context docBase="MyHelloWebApp" path="/MyHelloWebApp" reloadable="true" source="org.eclipse.jst.jee.server:MyHelloWebApp"/><Context docBase="HelloApp" path="/HelloApp" reloadable="true" source="org.eclipse.jst.jee.server:HelloApp"/></Host>
     </Engine>
   </Service>
 </Server>

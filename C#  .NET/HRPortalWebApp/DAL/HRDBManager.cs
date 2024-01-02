@@ -7,7 +7,7 @@ public class HRDBManager{
     public static string connection = "server=192.168.10.150; port=3306; user=dac19; password=welcome; database=dac19";
 
     public static List<Employees> GetAllEmployees()
-    {
+    {      
         MySqlConnection con = new MySqlConnection();
         con.ConnectionString=connection;
         string query = "select * from employees";
@@ -54,6 +54,35 @@ public class HRDBManager{
         finally{
                 con.Close();
             }
+        }
+
+
+
+        public static Employees GetByID(int empno){
+        MySqlConnection con = new MySqlConnection();
+        con.ConnectionString=connection;
+        string query = "select * from employees where id ='" + empno +"';
+        MySqlCommand cmd = new MySqlCommand(query,con);
+
+        try{
+            con.Open();
+            MySqlDataReader reader= cmd.ExecuteReader();
+        while (reader.Read())
+            {
+                int empid = int.Parse(reader["empno"].ToString());
+                string ename = reader["ename"].ToString();
+                string job = reader["job"].ToString();
+                Employees emp = new Employees(empid, ename, job);
+            }
+            reader.Close();            
+        }
+        catch(Exception e){
+                Console.WriteLine(e.Message);
+            }
+        finally{
+                con.Close();
+            }
+        return emp;
         }
 
 }

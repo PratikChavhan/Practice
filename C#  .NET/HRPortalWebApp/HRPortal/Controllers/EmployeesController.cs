@@ -43,6 +43,14 @@ public class EmployeesController : Controller
         return View();
     }
 
+    public IActionResult GetByID(int empno)
+    {
+        Employees emp= HRDBManager.GetByID(empno);
+        ViewData["EmployeeeByID"] = emp;
+        // Console.WriteLine(emplist);
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
