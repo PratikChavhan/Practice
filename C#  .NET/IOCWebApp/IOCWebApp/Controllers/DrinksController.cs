@@ -19,13 +19,13 @@ public class DrinksController : ControllerBase
     //action method
     [HttpGet]
     [Route("api/drinks")]
-    public IActionResult GetDrinks()
+    public IActionResult GetSoftdrinks()
     {
         //invoke service method to resturn products
         // send received data as message to outside world
         try
         {
-            var message = _svc.GetDrinks();
+            var message = _svc.GetSoftdrinks();
             if (message == null)
             {
                 return NotFound();
@@ -63,7 +63,7 @@ public class DrinksController : ControllerBase
     }
 
     [HttpGet("api/drinks/{id}")]
-    public IActionResult GetById(int id)
+    public IActionResult GetSoftdrinksById(int id)
     {
         try
         {

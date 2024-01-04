@@ -1,0 +1,12 @@
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\bin\Debug\net8.0\BOL.deps.json
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\bin\Debug\net8.0\BOL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\bin\Debug\net8.0\BOL.pdb
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.AssemblyInfoInputs.cache
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.AssemblyInfo.cs
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.csproj.CoreCompileInputs.cache
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.sourcelink.json
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\refint\BOL.dll
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\BOL.pdb
+C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\MenuMVC\BOL\obj\Debug\net8.0\ref\BOL.dll

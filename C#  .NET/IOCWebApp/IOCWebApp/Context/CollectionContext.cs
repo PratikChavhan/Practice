@@ -11,7 +11,7 @@ public class CollectionContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         string conString = "server=127.0.0.1;uid=root;" + "pwd=root;database=dbt";
-        optionsBuilder.UseMySQL(conString);
+        optionsBuilder.UseMySql(conString);
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
