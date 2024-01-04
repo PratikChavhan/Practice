@@ -34,7 +34,10 @@
                         <td>@m.id</td>
                         <td>@m.name</td>
                         <td>@m.rate</td>
-                        <td><a href="Edit/@m.id" name="id" value="@m.id">EDIT</a></td>
+                        <td>
+                            <a href="Edit/@m.id" name="id" value="@m.id">EDIT</a> / <a href="Remove/@m.id" name="id"
+                                value="@m.id">DELETE</a>
+                        </td>
                     </tr>
                 }
             }

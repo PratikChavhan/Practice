@@ -18,9 +18,16 @@ public class MenuCatlog
         return m1;
     }
 
-    public boolean Update(int id, string name, int rate)
+    public bool Update(int id, string name, int rate)
     {
-        return DBManager.UpdateMenu(id, name, rate);
+        DBManager db = new DBManager();
+        return db.UpdateMenu(id, name, rate);
+    }
+
+    public bool Delete(int id)
+    {
+        DBManager db = new DBManager();
+        return db.RemoveMenu(id);
     }
 }
 

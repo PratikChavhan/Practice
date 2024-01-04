@@ -12,7 +12,7 @@ public class DBManager
         MySqlConnection conn = new MySqlConnection();
         conn.ConnectionString = conn_string;
 
-        string query = "select * from menucard";
+        string query = "select * from menucard order by ID";
         List<Menu> mlist = new List<Menu>();
 
         MySqlCommand cmd = new MySqlCommand(query, conn);
@@ -41,8 +41,62 @@ public class DBManager
         return mlist;
     }
 
-    public Menu
+    public bool UpdateMenu(int id, string name, int rate)
+    {
+        MySqlConnection conn = new MySqlConnection();
+        conn.ConnectionString = conn_string;
+        string query = "Update menucard set NAME=@name, RATE=@rate where ID=@id";
+        MySqlCommand cmd = new MySqlCommand(query, conn);
+        try
+        {
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@rate", rate);
+            conn.Open();
+            int status = cmd.ExecuteNonQuery();
+            if (status > 0)
+            {
+                return true;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            conn.Close();
+        }
+        return false;
+    }
 
+
+    public bool RemoveMenu(int id)
+    {
+        MySqlConnection conn = new MySqlConnection();
+        conn.ConnectionString = conn_string;
+        string query = "delete from menucard where ID=@id";
+        MySqlCommand cmd = new MySqlCommand(query, conn);
+        try
+        {
+            cmd.Parameters.AddWithValue("@id", id);
+            conn.Open();
+            int status = cmd.ExecuteNonQuery();
+            if (status > 0)
+            {
+                return true;
+            }
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            conn.Close();
+        }
+        return false;
+    }
 
 }
 

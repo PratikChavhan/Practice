@@ -35,7 +35,6 @@ public class MenuController : Controller
     [Route("Menu/Edit/{id}")]
     public IActionResult Edit(int id, string name, int rate)
     {
-        Menu m12 = mcat.getById(id);
         MenuCatlog mcat = new MenuCatlog();
         bool status = mcat.Update(id, name, rate);
         if (status)
@@ -43,6 +42,19 @@ public class MenuController : Controller
             return this.RedirectToAction("menulist");
 
 
+        }
+        return View();
+    }
+
+
+    [Route("Menu/Remove/{id}")]
+    public IActionResult Delete(int id)
+    {
+        MenuCatlog mcat = new MenuCatlog();
+        bool status = mcat.Delete(id);
+        if (status)
+        {
+            return this.RedirectToAction("menulist");
         }
         return View();
     }
