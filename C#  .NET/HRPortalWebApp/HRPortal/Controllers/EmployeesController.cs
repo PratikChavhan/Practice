@@ -37,7 +37,7 @@ public class EmployeesController : Controller
     [HttpGet]
     public IActionResult ShowAll()
     {
-        List<Employees> emplist= HRDBManager.GetAllEmployees();
+        List<Employees> emplist = HRDBManager.GetAllEmployees();
         ViewData["Employee"] = emplist;
         // Console.WriteLine(emplist);
         return View();
@@ -45,7 +45,7 @@ public class EmployeesController : Controller
 
     public IActionResult GetByID(int empno)
     {
-        Employees emp= HRDBManager.GetByID(empno);
+        Employees emp = HRDBManager.GetByID(empno);
         ViewData["EmployeeeByID"] = emp;
         // Console.WriteLine(emplist);
         return View();

@@ -98,5 +98,29 @@ public class DBManager
         return false;
     }
 
+    public void insertmenu(int id, string name, int rate)
+    {
+        MySqlConnection conn = new MySqlConnection();
+        conn.ConnectionString = conn_string;
+        string query = "insert into menucard values(@id, @name, @rate)";
+        MySqlCommand cmd = new MySqlCommand(query, conn);
+        try
+        {
+            conn.Open();
+            cmd.Parameters.AddWithValue("@id", id);
+            cmd.Parameters.AddWithValue("@name", name);
+            cmd.Parameters.AddWithValue("@rate", rate);
+            cmd.ExecuteNonQuery();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
+        finally
+        {
+            conn.Close();
+        }
+
+    }
 }
 
