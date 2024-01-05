@@ -20,9 +20,5 @@ public class ProductCatalog
         return p1;
     }
 
-    public bool Update(int pid, string pname, int uprice, int splid)
-    {
-        DBManager db = new DBManager();
-        return db.UpdateMenu(pid, pname, uprice, splid);
-    }
+
 }
