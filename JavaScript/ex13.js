@@ -1,8 +1,9 @@
+// callback
 // counter factory 
 
-function counterFactory(start){
-    let count=start;
-    function incrementor(){
+function counterFactory(start) {
+    let count = start;
+    function incrementor() {
         return ++count;
     }
     return incrementor;
@@ -14,4 +15,3 @@ incr();
 incr();
 incr();
 console.log(incr());
-  
