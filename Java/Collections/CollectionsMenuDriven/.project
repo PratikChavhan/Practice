@@ -17,7 +17,7 @@
 	<filteredResources>
 		<filter>
 			<id>1702403803035</id>
-			<name></name>
+			<name>.</name>
 			<type>30</type>
 			<matcher>
 				<id>org.eclipse.core.resources.regexFilterMatcher</id>
