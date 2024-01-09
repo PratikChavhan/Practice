@@ -22,10 +22,11 @@
 				<td>${emp.empno}</td>
 				<td>${emp.ename}</td>
 				<td>${emp.sal}</td>
-				<td><a href="#">Edit</a> / <a href="#">Delete</a></td>
+				<td><a href="">Edit</a> / <a href="#">Delete</a></td>
 			</tr>
 			</c:forEach>
-		</tbody>	
+		</tbody>
 	</table>
+	<p><a href="addemp.jsp">Add New Employee</a></p>
 </body>
 </html>

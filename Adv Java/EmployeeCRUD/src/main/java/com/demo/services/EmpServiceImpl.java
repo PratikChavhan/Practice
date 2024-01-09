@@ -19,4 +19,10 @@ public class EmpServiceImpl implements EmpService{
 		return edao.getAllEmployees();
 	}
 
+	@Override
+	public void addnewemp(Employee e1) {
+		edao.insertnewemp(e1);
+		
+	}
+
 }

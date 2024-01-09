@@ -31,5 +31,9 @@ public class DisplayEmpServlet extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("displayemp.jsp");
 		rd.forward(request, response);
 	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request,response);
+	}
 
 }

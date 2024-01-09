@@ -6,4 +6,6 @@ import com.demo.model.Employee;
 
 public interface EmpService {
 	public List<Employee> findAllEmployees();
+
+	public void addnewemp(Employee e1);
 }

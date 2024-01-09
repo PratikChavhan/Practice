@@ -12,12 +12,13 @@ import java.util.ArrayList;
 
 public class EmpDaoImpl implements EmpDao{
 	static Connection conn;
-	static PreparedStatement selemp;
+	static PreparedStatement selemp, insemp;
 	static {
 		
 		try {
 			conn = DBUtil.getMyConnection();
 			selemp = conn.prepareStatement("select * from employee");
+			insemp = conn.prepareStatement("insert into employee values(?, ?, ?)");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
@@ -38,6 +39,18 @@ public class EmpDaoImpl implements EmpDao{
 			e.printStackTrace();
 		}
 		return lst;
+	}
+
+	@Override
+	public void insertnewemp(Employee e1) {
+		try {
+			insemp.setInt(1,e1.getEmpno());
+			insemp.setString(2,e1.getEname());
+			insemp.setInt(3,e1.getSal());
+			insemp.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	
