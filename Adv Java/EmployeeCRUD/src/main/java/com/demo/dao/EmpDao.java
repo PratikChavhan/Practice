@@ -8,4 +8,6 @@ public interface EmpDao {
 	public List<Employee> getAllEmployees();
 
 	public void insertnewemp(Employee e1);
+
+	public Employee findById(int empid);
 }

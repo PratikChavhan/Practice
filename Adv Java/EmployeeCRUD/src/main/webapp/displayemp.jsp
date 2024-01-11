@@ -13,7 +13,7 @@
 			<tr>
 				<th>Employee Id</th>
 				<th>Employee Name</th>
-				<th>Employee Sal</th>
+				<th>Employee Salary</th>
 				<th>actions</th>
 			</tr>
 		<tbody>
@@ -22,7 +22,8 @@
 				<td>${emp.empno}</td>
 				<td>${emp.ename}</td>
 				<td>${emp.sal}</td>
-				<td><a href="">Edit</a> / <a href="#">Delete</a></td>
+				<td><a href="editemp?eid={emp.empno}">Edit</a> / 
+				<a href="deleteemp?eid={emp.empno}">Delete</a></td>
 			</tr>
 			</c:forEach>
 		</tbody>

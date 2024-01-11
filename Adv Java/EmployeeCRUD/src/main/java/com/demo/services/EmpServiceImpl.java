@@ -25,4 +25,9 @@ public class EmpServiceImpl implements EmpService{
 		
 	}
 
+	@Override
+	public Employee getById(int empid) {
+		return edao.findById(empid);
+	}
+
 }
