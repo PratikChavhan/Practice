@@ -1,6 +1,0 @@
-@IOCWebApp_HostAddress = http://localhost:5127
-
-GET {{IOCWebApp_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

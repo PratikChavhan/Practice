@@ -1,8 +1,0 @@
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.csproj.AssemblyReference.cache
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.AssemblyInfoInputs.cache
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.AssemblyInfo.cs
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.csproj.CoreCompileInputs.cache
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\coder\OneDrive\Desktop\Git\Practice\C#  .NET\IOCWebApp\IOCWebApp\obj\Debug\net8.0\IOCWebApp.sourcelink.json
