@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function f1() {
+                let data = document.getElementById("i1").value
+                let uc = document.getElementById("r1").checked
+                let lc = document.getElementById("r2").checked
+                let tc = document.getElementById("r3").checked
+
+                let output = data
+                if(uc) {
+                    output = data.toUpperCase()
+                }
+                else if(lc) {
+                    output = data.toLowerCase()
+                }
+                else {
+                    let first = data.charAt(0).toUpperCase()
+                    let second = data.substring(1).toLowerCase()
+                    output = first + second
+                }
+                document.getElementById("sp1").innerHTML = output
+            }
+        </script>
+    </head>
+    <body>
+        <pre>
+            <label>Enter Name:<input id="i1" type="text" onblur="f1()"></label>
+            <label>Uppercase : <input id="r1" type="radio" name = "format" onclick="f1()"/></label>
+            <label>Lowercase : <input id="r2" type="radio" name="format" onclick="f1()"/></label>
+            <label>Titlecase : <input id="r3" type="radio" name="format" onclick="f1()" /></label>
+            <p>Result : <span id="sp1"></span></p>
+        </pre>
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+﻿@page
+@using HR
+@using catalog
+@model IndexModel
+@{
+Products newProduct = new Products();
+newProduct.Id = 1001;
+newProduct.Title = "TEST";
+newProduct.Description = "Testing description";
+newProduct.UnitPrice = 200;
+newProduct.Quantity = 500;
+newProduct.Imageurl = "images/gamer-illustration.jpg";
+string url = (string)newProduct.Imageurl;
+
+}
+@{
+    Person p1 = new Person();
+    p1.Id=1;
+    p1.fname = "Pratik";
+    p1.lname = "Chavhan";
+}
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, <br /> @p1.fname @p1.lname</h1>
+    <br />
+    <img src=@url alt= "N/A"/>
+    <p>@newProduct</p>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

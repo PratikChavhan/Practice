@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script>
+            function calculate() {
+                let x = parseInt(document.getElementById("n1").value)
+                let y = parseInt(document.getElementById("n2")["value"])
+                let opr = document.getElementById("op").value
+
+                let result
+
+                switch(opr){
+                    case '+':
+                        result = x+y
+                        break
+
+                    case '-':
+                        result = x-y
+                        break
+
+                    case '*':
+                        result = x*y
+                        break
+
+                    case '/':
+                        result = x/y
+                        break
+                }
+                let outputstr = `${x} ${opr} ${y} = ${result}`
+                document.getElementById("opres").innerHTML = outputstr
+            }
+        </script>
+    </head>
+    <body>
+        <h1 align="center">Calculator</h1>
+        <pre>
+            Enter 1st number: <input id="n1" type="number" value="0" />
+            Enter 2nd number: <input id="n2" type="number" value="0" />
+            Operation: <select id="op" onchange="calculate()">
+                            <option>select</option>
+                            <option>+</option>
+                            <option>-</option>
+                            <option>*</option>
+                            <option>/</option>
+                       </select>
+                       <p>The Result is <span id="opres"></span></p>
+        </pre>
+    </body>
+</html>

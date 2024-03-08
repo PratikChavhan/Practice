@@ -1,0 +1,14 @@
+@using BOL;
+@using BLL;
+@{
+    ViewData["Title"] = "Update";
+}
+<form method="post">
+    <div>
+        <input name="id" type="number" placeholder="@Model.id" value="@Model.id" readonly>
+        <input name="name" placeholder="@Model.name" type="text" value="">
+        <input name="rate" placeholder="@Model.rate" type="number" value="">
+
+        <button type="submit">Update</button>
+    </div>
+</form>
