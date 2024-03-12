@@ -1,24 +1,24 @@
-package Basics.pattern;
+package com.demo.patterns;
 
 import java.util.Scanner;
 
 /**
- * Aryan and his friends are very fond of patterns. For a given integer ‘N’,
- * they want to make the Increasing Number Triangle.
+ * Aryan and his friends are very fond of the pattern. For a given integer ‘N’,
+ * they want to make the Reverse N-Number Triangle.
  * Example:
  * Input: ‘N’ = 3
  * Output:
+ * 1 2 3
+ * 1 2
  * 1
- * 2 3
- * 4 5 6
  */
-
-public class _15_ReverseLetterTriangle {
-    public static void reverseLetterTriangle(int n) {
+public class _6_ReverseTriangle {
+    public static void nNumberTriangle(int n) {
         for (int i = 0; i < n; i++) {
-            int num = 65;
+            int num = 0;
             for (int j = 0; j < n - i; j++) {
-                System.out.print((char) num++ + " ");
+                num++;
+                System.out.print(num + " ");
             }
             System.out.println();
         }
@@ -29,8 +29,7 @@ public class _15_ReverseLetterTriangle {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n: ");
         n = sc.nextInt();
-        reverseLetterTriangle(n);
+        nNumberTriangle(n);
         sc.close();
     }
-
 }

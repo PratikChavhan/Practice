@@ -1,25 +1,24 @@
-package Basics.pattern;
+package com.demo.patterns;
 
 import java.util.Scanner;
 
 /**
- * Sam is planting trees on the upper half region (separated by the left
- * diagonal) of the square shared field.
- * For every value of ‘N’, print the field if the trees are represented by ‘*’.
+ * Aryan and his friends are very fond of patterns. For a given integer ‘N’,
+ * they want to make the Increasing Number Triangle.
  * Example:
  * Input: ‘N’ = 3
  * Output:
- * * * *
- * * *
- * *
+ * 1
+ * 2 3
+ * 4 5 6
  */
 
-public class _5_Seeding {
-
-    public static void seeding(int n) {
+public class _15_ReverseLetterTriangle {
+    public static void reverseLetterTriangle(int n) {
         for (int i = 0; i < n; i++) {
+            int num = 65;
             for (int j = 0; j < n - i; j++) {
-                System.out.print("* ");
+                System.out.print((char) num++ + " ");
             }
             System.out.println();
         }
@@ -30,7 +29,8 @@ public class _5_Seeding {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n: ");
         n = sc.nextInt();
-        seeding(n);
+        reverseLetterTriangle(n);
         sc.close();
     }
+
 }

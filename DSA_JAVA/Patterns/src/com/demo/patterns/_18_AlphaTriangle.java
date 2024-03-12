@@ -1,19 +1,19 @@
-package Basics.pattern;
+package com.demo.patterns;
 
 import java.util.Scanner;
 
 /**
- * Sam is curious about Alpha-Hills, so he decided to create Alpha-Hills of
- * different sizes.
- * An Alpha-hill is represented by a triangle, where alphabets are filled in
- * palindromic order.
- * For every value of ‘N’, help sam to return the corresponding Alpha-Hill.
+ * Sam is researching on Alpha-Triangles. So, he needs to create them for
+ * different integers ‘N’.
+ * An Alpha-Triangle is represented by the triangular pattern of alphabets in
+ * reverse order.
+ * For every value of ‘N’, help sam to print the corresponding Alpha-Triangle.
  * Example:
  * Input: ‘N’ = 3
  * Output:
- * ___ A
- * _ A B A
- * A B C B A
+ * C
+ * C B
+ * C B A
  */
 
 public class _18_AlphaTriangle {
